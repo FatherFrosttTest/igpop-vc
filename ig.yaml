@@ -1,0 +1,5 @@
+id: provider-directory
+title: DaVinci PDEX Plan Net
+url: http://hl7.org/fhir/us/core/
+description: Davinci PDEX Plan Net, Release 1 - US Realm STU
+fhir: 4.0.0
