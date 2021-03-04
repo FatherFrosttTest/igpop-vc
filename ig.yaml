@@ -1,5 +1,5 @@
-id: provider-directory
-title: DaVinci PDEX Plan Net
+id: village_care_fhir_api
+title: VillageCare FHIR API
 url: http://hl7.org/fhir/us/core/
-description: Davinci PDEX Plan Net, Release 1 - US Realm STU
+description: VillageCare FHIR API
 fhir: 4.0.0
