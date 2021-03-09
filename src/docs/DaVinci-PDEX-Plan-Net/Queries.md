@@ -15,6 +15,8 @@ title: Queries
 [https://fhir.villagecare.org/PractitionerRole?\_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerActive=true&practitionerName=COSTA%20DANIELA&organizationName=FITNESS](https://fhir.villagecare.org/PractitionerRole?\_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerActive=true&practitionerName=COSTA%20DANIELA&organizationName=FITNESS)
 
 [https://fhir.villagecare.org/PractitionerRole?\_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerActive=true&practitionerName=COSTA%20DANIELA&organizationName=FITNESS&practitionerNetwork=MLTC](https://fhir.villagecare.org/PractitionerRole?\_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerActive=true&practitionerName=COSTA%20DANIELA&organizationName=FITNESS&practitionerNetwork=MLTC)
+
+[https://fhir.villagecare.org/PractitionerRole?\_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerActive=true&practitionerName=COSTA%20DANIELA&organizationName=FITNESS&practitionerNetwork=MLTC&practitionerSpecialty=PHYSICAL%20THERAPY](https://fhir.villagecare.org/PractitionerRole?\_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerActive=true&practitionerName=COSTA%20DANIELA&organizationName=FITNESS&practitionerNetwork=MLTC&practitionerSpecialty=PHYSICAL%20THERAPY)
 ____
 
 ## Organization
@@ -27,6 +29,10 @@ ____
 [https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL](https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL)
 
 [https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL&organizationNetwork=MAP](https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL&organizationNetwork=MAP)
+
+[https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL&organizationNetwork=MAP&organizationType=HOSPITAL](https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL&organizationNetwork=MAP&organizationType=HOSPITAL)
+
+[https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL&organizationNetwork=MAP&organizationType=HOSPITAL&organizationSpecialty=NURSING%20HOME%20CARE](https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL&organizationNetwork=MAP&organizationType=HOSPITAL&organizationSpecialty=NURSING%20HOME%20CARE)
 ____
 
 ## Pharmacy
