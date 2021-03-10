@@ -32,7 +32,7 @@ ____
 
 [https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL&organizationNetwork=MAP&organizationType=HOSPITAL](https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL&organizationNetwork=MAP&organizationType=HOSPITAL)
 
-[https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL&organizationNetwork=MAP&organizationType=HOSPITAL&organizationSpecialty=NURSING%20HOME%20CARE](https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL&organizationNetwork=MAP&organizationType=HOSPITAL&organizationSpecialty=NURSING%20HOME%20CARE)
+[https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL&organizationNetwork=MAP&organizationType=HOSPITAL&organizationSpecialty=GENERAL%20MEDICINE%20CLINIC%20SPECIALTY](https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network&organizationActive=true&organizationName=SOUTHSIDE%20HOSPITAL&organizationNetwork=MAP&organizationType=HOSPITAL&organizationSpecialty=GENERAL%20MEDICINE%20CLINIC%20SPECIALTY)
 ____
 
 ## Pharmacy
