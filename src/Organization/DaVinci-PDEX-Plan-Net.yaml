@@ -28,7 +28,7 @@ elements:
   type: 
     minItems: 1
     collection: true
-    valueset: { id: 'organization-type' }
+    valueset: { id: 'provider-type' }
     type: CodeableConcept
     description: Kind of organization. 
   name: 
