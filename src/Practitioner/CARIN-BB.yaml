@@ -1,11 +1,11 @@
-description: Practitioner is a person who is directly or indirectly involved in the provisioning of healthcare.
+description: This profile builds upon the US Core Practitioner profile. It is used to convey information about the practitioner who provided to the patient services described on the claim.
 
 elements:
   meta:
     type: Meta
     description: Metadata about the resource.
     elements:
-      profile: {type: canonical, collection: true, description: Profiles this resource claims to conform to. , constant : http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition-plannet-Practitioner.html }    
+      profile: {type: canonical, collection: true, description: Profiles this resource claims to conform to. , constant : http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Practitioner}    
   extension:
     collection: true
     type: Extension
@@ -25,13 +25,15 @@ elements:
   active: 
     minItems: 1
     type: boolean
-    constant: 'true'
+    constant: 'false'
     description: Whether this practitioner's record is in active use.
   name:
     collection: true
     minItems: 1
     type: HumanName
     description: A name associated with the patient
+    rule:
+      r1: 'family.count() + given.count() >= 1'
     elements: { family: {type: string, required: true}, given: {type: string, collection: true}}
   gender:
     type: code

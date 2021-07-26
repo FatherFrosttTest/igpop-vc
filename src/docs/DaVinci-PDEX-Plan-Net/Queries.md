@@ -35,13 +35,3 @@ ____
 [https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationActive=true&organizationName=INTERGEN%20HEALTH&organizationNetwork=MAP&organizationType=ANCILLARY](https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationActive=true&organizationName=INTERGEN%20HEALTH&organizationNetwork=MAP&organizationType=ANCILLARY)
 
 [https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationActive=true&organizationName=INTERGEN%20HEALTH&organizationNetwork=MAP&organizationType=ANCILLARY&organizationSpecialty=HOME%20HEALTH%20AIDE](https://fhir.villagecare.org/OrganizationAffiliation?\_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationActive=true&organizationName=INTERGEN%20HEALTH&organizationNetwork=MAP&organizationType=ANCILLARY&organizationSpecialty=HOME%20HEALTH%20AIDE)
-____
-
-## Pharmacy
-##### Queries to get Pharmacy organization entity with connected entities(Healthcare service, Location) by pharmacy name and pharmacy active flag
-
-[https://fhir.villagecare.org/HealthcareService?\_include=HealthcareService:organization,HealthcareService:location&organizationType=pharmacy](https://fhir.villagecare.org/HealthcareService?\_include=HealthcareService:organization,HealthcareService:location&organizationType=pharmacy)
-
-[https://fhir.villagecare.org/HealthcareService?\_include=HealthcareService:organization,HealthcareService:location&organizationType=pharmacy&organizationActive=true](https://fhir.villagecare.org/HealthcareService?\_include=HealthcareService:organization,HealthcareService:location&organizationType=pharmacy&organizationActive=true)
-
-[https://fhir.villagecare.org/HealthcareService?\_include=HealthcareService:organization,HealthcareService:location&organizationType=pharmacy&organizationActive=true&organizationName=STARSIDE%20DRUGS](https://fhir.villagecare.org/HealthcareService?\_include=HealthcareService:organization,HealthcareService:location&organizationType=pharmacy&organizationActive=true&organizationName=STARSIDE%20DRUGS)

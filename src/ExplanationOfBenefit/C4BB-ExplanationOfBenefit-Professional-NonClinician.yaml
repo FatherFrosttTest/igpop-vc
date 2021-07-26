@@ -1,0 +1,94 @@
+description: This profile is used for Explanation of Benefits (EOBs) based on claims submitted by physicians, suppliers and other non-institutional providers for professional services. These services may be rendered in inpatient or outpatient, including office locations. The claims data is based on the professional claim form 1500, submission standards adopted by the Department of Health and Human Services as form CMS-1500.
+
+elements:
+  meta:
+    type: Meta
+    description: Metadata about the resource.
+    elements:
+      profile: {type: canonical, collection: true, description: Profiles this resource claims to conform to. , constant : http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-ExplanationOfBenefit-Professional-NonClinician } 
+  extension:
+    collection: true
+    type: Extension
+    description: Additional content defined by implementations
+  identifier:
+    type: Identifier
+    description: Business Identifier for the resource  
+  status:
+    required: true
+    type: code
+    description: A code specifying the state of the resource instance.
+  type:
+    type: CodeableConcept
+    required: true
+    description: Category or discipline
+    constant: professional
+  use:
+    required: true
+    type: code
+    description: Complete, proposed, exploratory, other.
+    constant: claim
+  patient:
+    required: true
+    type: Reference(C4BB Patient)
+    description: The recipient of the products and services
+  created:
+    required: true
+    type: dateTime
+    description: Response creation date
+  insurer:
+    required: true
+    type: Reference(C4BB Organization)
+    description: Party responsible for reimbursement
+  provider:
+    required: true
+    type: Reference(C4BB Organization)
+    description: Party responsible for the claim
+  outcome:
+    required: true
+    type: code
+    description: The result of the claim processing.
+  careTeam:
+    collection: true
+    type: BackboneElement
+    description: Care Team members.  
+    elements:
+      sequence: {required: true, type: positiveInt, description: Order of care team.} 
+      provider: {required: true, type: Reference(C4BB Organization | C4BB Practitioner), description: Practitioner or organization. }
+      role: {required: true, type: CodeableConcept, description: Function within the team. }      
+  diagnosis:
+    required: true
+    collection: true
+    type: BackboneElement
+    description: Pertinent diagnosis information.  
+    elements:
+      sequence: {required: true, type: positiveInt, description: Diagnosis instance identifier.} 
+      diagnosis: {required: true, type: CodeableConcept, description: Nature of illness or problem. }
+      type: {required: true, type: CodeableConcept, description: Timing or nature of the diagnosis. }    
+  insurance:
+    required: true
+    collection: true
+    type: BackboneElement
+    description: Patient insurance information.  
+    elements:
+      focal: {required: true, type: boolean, description: Coverage to be used for adjudication., constant: true} 
+      coverage: {required: true, type: Reference(C4BB Coverage), description: Insurance information. }      
+  item:
+    collection: true
+    type: BackboneElement
+    description: Supporting information.  
+    elements:
+      sequence: {required: true, type: positiveInt, description: Item instance identifier.} 
+      diagnosisSequence: {type: positiveInt, description: Applicable diagnoses.} 
+      extension: {collection: true, type: Extension, description: Additional content defined by implementations.} 
+      serviced: {union: [date, Period], description: Date or dates of service or product delivery.} 
+      category: {type: CodeableConcept, description: Benefit classification. }
+      productOrService: {required: true, type: CodeableConcept, description: Billing, service, product, or drug code. } 
+      adjudication: {collection: true, type: BackboneElement, description: Adjudication details., elements: {category: {required: true, type: CodeableConcept, description: Type of adjudication information}, amount: {type: Money, description: Monetary amount}} }    
+  total:
+    minItems: 1
+    collection: true
+    type: BackboneElement
+    description: Pertinent diagnosis information.  
+    elements:
+      category: {required: true, type: CodeableConcept, description: Type of adjudication information.} 
+      amount: {required: true, type: Money, description: Financial total for the category. }

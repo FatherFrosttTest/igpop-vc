@@ -1,0 +1,32 @@
+description: This profile sets minimum expectations for the Procedure resource to record, search, and fetch procedures associated with a patient. Defines constraints and extensions on the Procedure resource for the minimal set of data to query and retrieve patient's procedure information.
+
+elements:
+  meta:
+    type: Meta
+    description: Metadata about the resource.
+    elements:
+      source: {type: uri, description: A uri that identifies the source system of the resource. , constant: http://hl7.org/fhir/us/core/StructureDefinition/us-core-procedure} 
+  identifier:
+    collection: true
+    type: Identifier
+    description: External Identifiers for this procedure
+  subject:
+    required: true
+    type: Reference(US Core Patient Profile)
+    description: Who the procedure was performed on.
+  status:
+    required: true
+    type: code    
+    description: US Core Procedure Status
+    constant: completed
+  category:
+    type: CodeableConcept   
+    description: Classification of the procedure  
+  code:
+    required: true
+    type: CodeableConcept    
+    description: Identification of the procedure 
+  performed:
+    required: true
+    union: [dateTime, Period, string, Age, Range]   
+    description: When the procedure was performed

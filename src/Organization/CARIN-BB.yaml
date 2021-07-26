@@ -1,11 +1,11 @@
-description: An organization is a formal or informal grouping of people or organizations with a common purpose, such as a company, institution, corporation, community group, or healthcare practice.
+description: This profile builds upon the US Core Organization profile. It is used to convey a payer, provider, payee or service facility organization.
 
 elements:
   meta:
     type: Meta
     description: Metadata about the resource.
     elements:
-      profile: {type: canonical, collection: true, description: Profiles this resource claims to conform to. , constant : http://hl7.org/fhir/us/davinci-pdex-plan-net/StructureDefinition-plannet-Organization.html }    
+      profile: {type: canonical, collection: true, description: Profiles this resource claims to conform to. , constant : http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Organization }    
   extension:
     collection: true
     type: Extension
@@ -22,18 +22,17 @@ elements:
       value: {type: string, description: The value that is unique }
       type: {type: CodeableConcept, valueset: { id: 'identifier-type' }, description: Description of identifier } 
   active: 
-    minItems: 1
+    required: true
     type: boolean
-    constant: 'true'
+    constant: 'false'
     description: Whether the organization's record is still in active use.
   type: 
-    minItems: 1
     collection: true
     valueset: { id: 'provider-type' }
     type: CodeableConcept
     description: Kind of organization. 
   name: 
-    minItems: 1
+    required: true
     type: string
     description: Name used for the organization.
   address:
