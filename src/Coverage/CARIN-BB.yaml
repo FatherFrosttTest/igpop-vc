@@ -1,4 +1,4 @@
-description: The HealthCareService resource typically describes services offered by an organization/practitioner at a location. The resource may be used to encompass a variety of services covering the entire healthcare spectrum, including promotion, prevention, diagnostics, hospital and ambulatory care, home care, long-term care, and other health-related and community services.
+description: Data that reflect a payer’s coverage that was effective as of the date of service or the date of admission of the claim.
 
 elements:
   meta:
@@ -7,16 +7,23 @@ elements:
     elements:
       profile: {type: canonical, collection: true, description: Profiles this resource claims to conform to. , constant : http://hl7.org/fhir/us/carin-bb/StructureDefinition/C4BB-Coverage } 
   identifier:
+    collection: true
     type: Identifier
-    description: Business Identifier for the coverage  
+    description: Business Identifier for the coverage 
+    elements:
+      system: {type: uri, required: true, description: The namespace for the identifier value  }
+      value:  {type: string, required: true, description: The value that is unique }
+      type: {type: CodeableConcept, valueset: { id: 'identifier-type' }, description: Description of identifier }    
   status:
     required: true
     type: code
     description: A code specifying the state of the resource instance.
+    valueset: { id: 'fm-status' }
   type:
     type: CodeableConcept
     description: The type of insurance - public health, worker compensation; private accident, auto, private health, etc.) or a direct payment by an individual or organization.
     constant: HIP
+    valueset: { id: 'coverage-type' }
   policyHolder:
     type: Reference(Patient | RelatedPerson | Organization)
     description: Owner of the policy
@@ -39,7 +46,7 @@ elements:
     required: true
     type: CodeableConcept
     description: Beneficiary relationship to the subscriber
-    constant: self
+    valueset: { id: 'subscriber-relationship' }
   period:
     type: Period
     description: Coverage start and end dates
@@ -56,6 +63,6 @@ elements:
     type: BackboneElement
     description: Additional coverage classifications.  
     elements:
-      type: {required: true, type: CodeableConcept, description: Type of class such as 'group' or 'plan'.} 
+      type: {required: true, type: CodeableConcept, description: Type of class such as 'group' or 'plan'., valueset: { id: 'coverage-class' }} 
       value: {required: true, type: string, description: Value associated with the type. }
       name: {type: string, description: Human readable description of the type and value. }

@@ -9,20 +9,27 @@ elements:
   identifier:
     type: Identifier
     description: Business Identifier for the resource  
+    elements:
+      system: {type: uri, required: true, description: The namespace for the identifier value  }
+      value:  {type: string, required: true, description: The value that is unique }
+      type: {type: CodeableConcept, valueset: { id: 'identifier-type' }, description: Description of identifier }  
   status:
     required: true
     type: code
     description: A code specifying the state of the resource instance.
+    valueset: { id: 'explanationofbenefit-status' }
   type:
     type: CodeableConcept
     required: true
     description: Category or discipline
     constant: pharmacy
+    valueset: { id: 'claim-type' }
   use:
     required: true
     type: code
     description: Complete, proposed, exploratory, other.
     constant: claim
+    valueset: { id: 'claim-use' }
   supportingInfo:
     minItems: 3
     collection: true
@@ -30,7 +37,7 @@ elements:
     description: Supporting information.  
     elements:
       sequence: {required: true, type: positiveInt, description: Information instance identifier.} 
-      category: {required: true, type: CodeableConcept, description: Classification of the supplied information. }
+      category: {required: true, type: CodeableConcept, description: Classification of the supplied information., valueset: { id: 'c4bb-supportinginfo-type' }}
       code: {type: CodeableConcept, description: Type of information. }    
       timing: {union: [date, Period], description: When it occurred. } 
       value: {union: [boolean, string, Quantity, Attachment, Attachment], description: Data to be provided. } 
@@ -57,6 +64,7 @@ elements:
     required: true
     type: code
     description: The result of the claim processing.
+    valueset: { id: 'remittance-outcome' }
   careTeam:
     collection: true
     type: BackboneElement
@@ -64,16 +72,7 @@ elements:
     elements:
       sequence: {required: true, type: positiveInt, description: Order of care team.} 
       provider: {required: true, type: Reference(C4BB Organization | C4BB Practitioner), description: Practitioner or organization. }
-      role: {required: true, type: CodeableConcept, description: Function within the team. }      
-  diagnosis:
-    required: true
-    collection: true
-    type: BackboneElement
-    description: Pertinent diagnosis information.  
-    elements:
-      sequence: {required: true, type: positiveInt, description: Diagnosis instance identifier.} 
-      diagnosis: {required: true, type: CodeableConcept, description: Nature of illness or problem. }
-      type: {required: true, type: CodeableConcept, description: Timing or nature of the diagnosis. }    
+      role: {required: true, type: CodeableConcept, description: Function within the team., valueset: { id: 'claim-pharmacy-careteam-role' }}      
   insurance:
     required: true
     collection: true
@@ -89,13 +88,13 @@ elements:
     elements:
       sequence: {required: true, type: positiveInt, description: Item instance identifier.} 
       serviced: {union: [date, Period], description: Date or dates of service or product delivery.} 
-      productOrService: {required: true, type: CodeableConcept, description: Billing, service, product, or drug code. } 
-      adjudication: {collection: true, type: BackboneElement, description: Adjudication details., elements: {category: {required: true, type: CodeableConcept, description: Type of adjudication information}, amount: {type: Money, description: Monetary amount}} }    
+      productOrService: {required: true, type: CodeableConcept, description: Billing, service, product, or drug code., valueset: { id: 'ndc-or-compound' } } 
+      adjudication: {collection: true, type: BackboneElement, description: Adjudication details., elements: {category: {required: true, type: CodeableConcept, description: Type of adjudication information, valueset: { id: 'c4bb-adjudication-category-discriminator' }}, amount: {type: Money, description: Monetary amount}} }    
   total:
     minItems: 2
     collection: true
     type: BackboneElement
     description: Pertinent diagnosis information.  
     elements:
-      category: {required: true, type: CodeableConcept, description: Type of adjudication information.} 
+      category: {required: true, type: CodeableConcept, description: Type of adjudication information., valueset: { id: 'c4bb-total-category-discriminator' }} 
       amount: {required: true, type: Money, description: Financial total for the category. }
