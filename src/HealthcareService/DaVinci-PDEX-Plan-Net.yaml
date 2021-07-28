@@ -24,11 +24,11 @@ elements:
     description: Whether this HealthcareService record is in active use.
     constant: true
   providedBy: 
-    type: Reference
+    type: Reference(Plan-Net Organization)
     description: Organization that provides this service.
   location: 
     collection: true
-    type: Reference
+    type: Reference(Plan-Net Location)
     description: Location(s) where service may be provided.
   name:
     type: string

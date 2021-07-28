@@ -24,7 +24,7 @@ elements:
     description: Whether this practitioner role record is in active use.
     constant: true
   practitioner: 
-    type: Reference
+    type: Reference(Plan-Net Practitioner)
     description: Practitioner that is able to provide the defined services for the organization.
   code: 
     collection: true
@@ -32,10 +32,10 @@ elements:
     type: CodeableConcept
     description: Roles which this practitioner may perform. 
   organization: 
-    type: Reference
+    type: Reference(Plan-Net Organization)
     description: Organization where the roles are available.
   location: 
-    type: Reference
+    type: Reference(Plan-Net Location)
     description: The location(s) at which this practitioner provides care.
   availableTime:
     collection: true

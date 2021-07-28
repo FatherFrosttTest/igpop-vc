@@ -15,12 +15,14 @@ elements:
     type: code    
     description: The status of the result value.
     constant: final
+    valueset: { id: 'observation-status' }
   category:
     collection: true
     minItems: 1    
     type: CodeableConcept   
     description: Classification of type of observation
-    constant: vital-signs  
+    constant: vital-signs 
+    valueset: { id: 'observation-category' }    
   encounter:
     type: Reference(Encounter)
     description: Healthcare event during which this observation is made
@@ -29,6 +31,7 @@ elements:
     type: CodeableConcept    
     description: Coded Responses from C-CDA Vital Sign Results.
     constant: 8302-2
+    valueset: { id: 'us-core-vital-signs' }
   value:
     type: Quantity    
     description: Vital Signs Value

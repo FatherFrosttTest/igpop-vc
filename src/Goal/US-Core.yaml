@@ -14,6 +14,7 @@ elements:
     required: true
     type: code    
     description: Current status of the goal.
+    valueset: { id: 'goal-status' }
   description:
     required: true
     type: CodeableConcept    

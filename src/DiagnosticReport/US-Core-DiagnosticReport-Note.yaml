@@ -35,3 +35,4 @@ elements:
     type: code    
     description: US Core Report Status
     constant: final
+    valueset: { id: 'diagnostic-report-status' }

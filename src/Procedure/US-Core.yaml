@@ -10,6 +10,10 @@ elements:
     collection: true
     type: Identifier
     description: External Identifiers for this procedure
+    elements:
+      system: {type: uri, required: true, description: The namespace for the identifier value  }
+      value:  {type: string, required: true, description: The value that is unique }
+      type: {type: CodeableConcept, valueset: { id: 'identifier-type' }, description: Description of identifier }    
   subject:
     required: true
     type: Reference(US Core Patient Profile)
@@ -19,13 +23,16 @@ elements:
     type: code    
     description: US Core Procedure Status
     constant: completed
+    valueset: { id: 'event-status' }
   category:
     type: CodeableConcept   
     description: Classification of the procedure  
+    valueset: { id: 'ex-benefitcategory-toscode' }
   code:
     required: true
     type: CodeableConcept    
     description: Identification of the procedure 
+    valueset: { id: 'us-core-procedure-code' }
   performed:
     required: true
     union: [dateTime, Period, string, Age, Range]   
