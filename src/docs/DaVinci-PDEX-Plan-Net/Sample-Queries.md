@@ -19,19 +19,26 @@ We store information about practitioners in these FHIR Entities:
 
 Practitioner queries examples:
 
-- [Get 100 practitioners (by default)](https://fhir.villagecare.org/Practitioner)
-- [Get practitioner by name](https://fhir.villagecare.org/Practitioner?name=GLASSER%20ANN)
-- [Get practitioners by language](https://fhir.villagecare.org/Practitioner?communication=es)
-- [Get practitioners by specialty](https://fhir.villagecare.org/Practitioner?qualificationName=PHYSICAL%20THERAPY)
-- [Get practitioner by identifier](https://fhir.villagecare.org/Practitioner?identifier=1861919391)
-- [Get practitioners by language AND specialty](https://fhir.villagecare.org/Practitioner?communication=es&qualificationName=PHYSICAL%20THERAPY)
+- Get 100 practitioners (by default)<br/>
+  [https://fhir.villagecare.org/Practitioner](https://fhir.villagecare.org/Practitioner)
+- Get practitioner by name<br/>
+  [https://fhir.villagecare.org/Practitioner?name=GLASSER%20ANN](https://fhir.villagecare.org/Practitioner?name=GLASSER%20ANN)
+- Get practitioners by language<br/>
+  [https://fhir.villagecare.org/Practitioner?communication=es](https://fhir.villagecare.org/Practitioner?communication=es)
+- Get practitioners by specialty<br/>
+  [https://fhir.villagecare.org/Practitioner?qualificationName=PHYSICAL%20THERAPY](https://fhir.villagecare.org/Practitioner?qualificationName=PHYSICAL%20THERAPY)
+- Get practitioner by identifier<br/>
+  [https://fhir.villagecare.org/Practitioner?identifier=1861919391](https://fhir.villagecare.org/Practitioner?identifier=1861919391)
+- Get practitioners by language AND specialty<br/>
+  [https://fhir.villagecare.org/Practitioner?communication=es&qualificationName=PHYSICAL%20THERAPY](https://fhir.villagecare.org/Practitioner?communication=es&qualificationName=PHYSICAL%20THERAPY)
 
 
 ##PractitionerRole
 
 PractitionerRole is a central entity for a practitioner. It means that this entity contains info about practitioner, network, location, organization and healthcareService. You can use PractitionerRole to search practitioners in the selected network:
 
-1. [Get practitionerRoles by network](https://fhir.villagecare.org/PractitionerRole?practitionerNetwork=MAP)	
+1. Get practitionerRoles by network<br/>
+   [https://fhir.villagecare.org/PractitionerRole?practitionerNetwork=MAP](https://fhir.villagecare.org/PractitionerRole?practitionerNetwork=MAP)	
 2. Get Practitioner Fhir ID from the PractitionerRole entity
 ```json
 "practitioner": {
@@ -42,7 +49,8 @@ PractitionerRole is a central entity for a practitioner. It means that this enti
   "resourceType": "Practitioner"
 }
 ```	
-3. [Get practitioner by Fhir ID](https://fhir.villagecare.org/Practitioner?id=b061b7b9-79d6-4cf2-a758-41debb380760)
+3. Get practitioner by Fhir ID<br/>
+[https://fhir.villagecare.org/Practitioner?id=b061b7b9-79d6-4cf2-a758-41debb380760](https://fhir.villagecare.org/Practitioner?id=b061b7b9-79d6-4cf2-a758-41debb380760)
 
 
 ####Advanced PractitionerRole Queries
@@ -51,9 +59,12 @@ Also PractitionerRole entity is used to get all FHIR entities connected with a p
 
 To add additional entities in the response, like Practitioner or Location you should use _include parameter, e.g.:
 
-- [Get PractitionerRole and Practitioner entities](https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:practitioner)	
-- [Get PractitionerRole with Practitioner and Location entities](https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:location)		
-- [Get PractitionerRole with all entities](https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService)
+- Get PractitionerRole and Practitioner entities<br/>
+[https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:practitioner](https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:practitioner)	
+- Get PractitionerRole with Practitioner and Location entities<br/>
+[https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:location](https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:location)			
+- Get PractitionerRole with all entities<br/>
+[https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService](https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService)
 	
 	
 Also you can use these search parameters:	
@@ -68,9 +79,11 @@ Also you can use these search parameters:
 
 Advanced PractitionerRole queries examples:
 
-- [Get by practitioner name](https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO)
-- [Get by network code and practitioner specialty](https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY)
-- [Get by all search parameters](https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO&organizationName=THE%20MOUNT%20SINAI%20HOSPITAL&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY&practitionerType=SPECIALISTS&practitionerSpecialtyCode=21001&practitionerTypeCode=SP)
+- Get by practitioner name<br/>
+[https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO](https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO)
+- Get by network code and practitioner specialty<br/>[https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY](https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY)
+- Get by all search parameters<br/>
+[https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO&organizationName=THE%20MOUNT%20SINAI%20HOSPITAL&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY&practitionerType=SPECIALISTS&practitionerSpecialtyCode=21001&practitionerTypeCode=SP](https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO&organizationName=THE%20MOUNT%20SINAI%20HOSPITAL&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY&practitionerType=SPECIALISTS&practitionerSpecialtyCode=21001&practitionerTypeCode=SP)
 ___
 
 ##Organization
@@ -85,19 +98,26 @@ HealthcareService - services provided in an organization
 
 Organization queries examples:
 
-- [Get 100 organizations (by default)](https://fhir.villagecare.org/Organization)
-- [Get organization by name](https://fhir.villagecare.org/Organization?name=NORTH%20CENTRAL%20BRONX%20HOSPITAL)
-- [Get organizations by address](https://fhir.villagecare.org/Organization?address=BRONX)
-- [Get organizations by type](https://fhir.villagecare.org/Organization?type=HS)	
-- [Get organization by identifier](https://fhir.villagecare.org/Organization?identifier=1023024882)
-- [Get organizations by address AND type](https://fhir.villagecare.org/Organization?address=BRONX&type=HS)
+- Get 100 organizations (by default)<br/>
+  [https://fhir.villagecare.org/Organization](https://fhir.villagecare.org/Organization)
+- Get organization by name<br/>
+  [https://fhir.villagecare.org/Organization?name=NORTH%20CENTRAL%20BRONX%20HOSPITAL](https://fhir.villagecare.org/Organization?name=NORTH%20CENTRAL%20BRONX%20HOSPITAL)
+- Get organizations by address<br/>
+  [https://fhir.villagecare.org/Organization?address=BRONX](https://fhir.villagecare.org/Organization?address=BRONX)
+- Get organizations by type<br/>
+  [https://fhir.villagecare.org/Organization?type=HS](https://fhir.villagecare.org/Organization?type=HS)	
+- Get organization by identifier<br/>
+  [https://fhir.villagecare.org/Organization?identifier=1023024882](https://fhir.villagecare.org/Organization?identifier=1023024882)
+- Get organizations by address AND type<br/>
+  [https://fhir.villagecare.org/Organization?address=BRONX&type=HS](https://fhir.villagecare.org/Organization?address=BRONX&type=HS)
 
 
 ##OrganizationAffiliation
 
 OrganizationAffiliation is a central entity for an organization. It means that this entity contains info about organization, network, location, and healthcareService. You can use OrganizationAffiliation to search organization in the selected network:
 
-1. [Get OrganizationAffiliation by network](https://fhir.villagecare.org/OrganizationAffiliation?organizationNetwork=MLTC)	
+1. Get OrganizationAffiliation by network<br/>
+  [https://fhir.villagecare.org/OrganizationAffiliation?organizationNetwork=MLTC](https://fhir.villagecare.org/OrganizationAffiliation?organizationNetwork=MLTC)	
 2. Get Organization Fhir ID from the OrganizationAffiliation entity
 ```json	
 "organization": {
@@ -108,7 +128,8 @@ OrganizationAffiliation is a central entity for an organization. It means that t
      "resourceType": "Organization"
 }
 ```		
-3. [Get Organization by Fhir ID](https://fhir.villagecare.org/Organization?id=22d99f7c-4dc6-46da-b5f8-1371f6ae8a53)
+3. Get Organization by Fhir ID<br/>
+  [https://fhir.villagecare.org/Organization?id=22d99f7c-4dc6-46da-b5f8-1371f6ae8a53](https://fhir.villagecare.org/Organization?id=22d99f7c-4dc6-46da-b5f8-1371f6ae8a53)
 
 ####Advanced OrganizationAffiliation Queries
 
@@ -116,9 +137,11 @@ Also OrganizationAffiliation entity is used to get all FHIR entities connected w
 
 To add additional entities in the response, like Organization or HealthcareService you should use _include parameter, e.g.:
 
-- [Get OrganizationAffiliation and Organization entities](https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization)	
-- [Get OrganizationAffiliation with Organization and HealthcareService entities](https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:service)
-- [Get OrganizationAffiliation with all entities](https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service)
+- Get OrganizationAffiliation and Organization entities<br/>
+  [https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization](https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization)		
+- Get OrganizationAffiliation with Organization and HealthcareService entities<br/>
+  [https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:service](https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:service)
+- Get OrganizationAffiliation with all entities<br/>        [https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service](https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service)
 
 Also you can use these search parameters:	
 	
@@ -132,6 +155,7 @@ Also you can use these search parameters:
 
 Advanced OrganizationAffiliation queries examples:
 
-- [Get by organization name](https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC)
-- [Get by network code and organization specialty](https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationNetwork=MLTC&organizationSpecialty=HOME%20HEALTH%20AIDE)
-- [Get by all search parameters](https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC&organizationNetwork=MLTC&organizationType=ANCILLARY&organizationSpecialty=HOME%20HEALTH%20AIDE&organizationTypeCode=AN&organizationSpecialtyCode=66801)
+- Get by organization name<br/> [https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC](https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC)
+- Get by network code and organization specialty<br/> 
+[https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationNetwork=MLTC&organizationSpecialty=HOME%20HEALTH%20AIDE](https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationNetwork=MLTC&organizationSpecialty=HOME%20HEALTH%20AIDE)
+- Get by all search parameters<br/>  [https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC&organizationNetwork=MLTC&organizationType=ANCILLARY&organizationSpecialty=HOME%20HEALTH%20AIDE&organizationTypeCode=AN&organizationSpecialtyCode=66801](https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC&organizationNetwork=MLTC&organizationType=ANCILLARY&organizationSpecialty=HOME%20HEALTH%20AIDE&organizationTypeCode=AN&organizationSpecialtyCode=66801)
