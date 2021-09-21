@@ -1,0 +1,225 @@
+<html><head><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-158366190-1"></script><script>window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+                              gtag('js', new Date());
+
+                              gtag('config', 'UA-158366190-1');
+                              gtag('config', 'UA-158366190-2');</script><meta charset="utf-8" /><link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet" /><link href="/igpop-vc/static/fire-solid.png" rel="icon" /><link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Montserrat|Roboto&amp;display=swap" rel="stylesheet" /><style>body .table {
+  display: table;
+  border-collapse: collapse;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+body .row {
+  display: table-row;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+body .column {
+  display: table-cell;
+  padding: 8px;
+}
+
+body .first-line {
+  border-bottom: 2px solid #E6ECF1;
+  color: #5b6975;
+}
+
+body a {
+  color: rgb(217, 86, 64);
+}
+
+body .body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: 0;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: "header header header" 
+"nav content ads";
+  padding: 0;
+  flex-direction: column;
+  grid-gap: 0px;
+  display: grid;
+  grid-template-columns: minmax(0, 20%) minmax(0, 1fr) minmax(0, 15%);
+}
+
+body .body #welcome {
+  color: inherit;
+}
+
+body .body #header {
+  grid-area: header;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow:  0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  z-index: 100;
+  border-bottom: 1px solid #d4dadf;
+  padding: 10px 0;
+}
+
+body .body #header h5 {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  padding: 5px 0px;
+  border-right: 1px solid #ddd;
+}
+
+body .body #header h5 .fa {
+  color: #e94a35;
+  text-shadow: -1px -1px 1px #000000c7;
+}
+
+body .body #header #top-nav {
+  text-align: center;
+  padding-left: 80px;
+  display: inline-block;
+}
+
+body .body #header #top-nav a {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #d95640;
+  padding: 5px;
+}
+
+body .body #main-menu {
+  grid-area: nav;
+  padding-top: 32px;
+  padding-left: 68px;
+  border-right: 1px solid #E6ECF1;
+  background-color: #f5f7f9;
+  overflow-y: auto;
+  padding-bottom: 100px;
+  font-weight: 800;
+}
+
+body .body #main-menu a {
+  line-height: 1.5;
+  border: 1px solid transparent;
+  word-break: break-word;
+  padding: 7px 24px 7px 16px;
+  cursor: pointer;
+  font-weight: 1000;
+  text-decoration: none;
+  font-size: 14px;
+  box-sizing: content-box;
+  display: block;
+  background: none;
+  color: #5C6975;
+}
+
+body .body #main-menu a:hover {
+  background-color: #E6ECF1;
+}
+
+body .body #main-menu a.active {
+  background-color: white;
+  border-left: 1px solid #E6ECF1;
+  border-top: 1px solid #E6ECF1;
+  border-bottom: 1px solid #E6ECF1;
+  border-right: 1px solid white;
+  margin-right: -1px;
+  z-index: 10;
+  color: #d95640;
+}
+
+body .body #main-menu section {
+  border-left: 1px solid #ddd;
+  margin-left: 18px;
+}
+
+body .body #main-menu section a {
+  color: gray;
+  font-weight: 400;
+}
+
+body .body #content {
+  background-color: white;
+  padding: 40px 88px;
+  grid-area: content;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+body .body #content h1 {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .body #content h2, body .body #content h3 {
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .body #content hr {
+  border-top: 2px solid #E6ECF1;
+}
+
+body .body #content a.refbtn {
+  margin: 0 5px;
+  color: #888888;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.42857143;
+}
+
+body .body #content span.sub {
+  float: right;
+  font-size: 16px;
+  color: #888;
+  display: inline-block;
+}
+
+body .body #db-content {
+  background-color: white;
+  padding: 40px 0px;
+  margin: 0 -40px;
+  grid-area: content;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+body .body #db-content .db-item {
+  width: 350px;
+  margin-right: 1em;
+  border: 1px solid #E6ECF1;
+  vertical-align: top;
+  padding: 16px 24px;
+  min-height: 108px;
+  margin-bottom: 1em;
+  box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  background-color: white;
+  border-radius: 3px;
+  display: inline-block;
+  color: #242A31;
+}
+
+body .body #db-content .db-item:hover {
+  text-decoration: none;
+  border-color: rgb(56, 132, 254);
+  opacity: 1;
+  color: #3884FE;
+}
+
+body .body #db-content .db-item h5 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+body .body #db-content .db-item .desc {
+  color: #9DAAB6;
+  font-size: 14px;
+}
+
+body .summary {
+  color: #74818D;
+}</style><title>VillageCare FHIR API</title></head><body><div class="body"><div id="header"><a href="/igpop-vc/" id="welcome"><h5><span class="fa fa-fire"></span> VillageCare FHIR API</h5></a><div id="top-nav"><a href="/igpop-vc/docs/CARIN-BB/Description.html">Docs</a><a href="/igpop-vc/profiles/CarePlan/US-Core.html">Profiles</a><a href="/igpop-vc/valuesets/act-encounter-code.html">ValueSets</a></div></div><div id="db-content"><a class="db-item" href="/igpop-vc/valuesets/act-encounter-code.html"><h5>act-encounter-code</h5><div class="desc">Domain provides codes that qualify the ActEncounterClas</div></a><a class="db-item" href="/igpop-vc/valuesets/address-type.html"><h5>address-type</h5><div class="desc">The type of an address (physical / postal).</div></a><a class="db-item" href="/igpop-vc/valuesets/administrative-gender.html"><h5>administrative-gender</h5><div class="desc">The gender of a person used for administrative purposes</div></a><a class="db-item" href="/igpop-vc/valuesets/board-verify-certification.html"><h5>board-verify-certification</h5><div class="desc">Board verify certification.</div></a><a class="db-item" href="/igpop-vc/valuesets/c4bb-adjudication-category-discriminator.html"><h5>c4bb-adjudication-category-discriminator</h5><div class="desc">Used as the discriminator for adjudication.category and</div></a><a class="db-item" href="/igpop-vc/valuesets/c4bb-claim-inpatient-institutional-diagnosis-type.html"><h5>c4bb-claim-inpatient-institutional-diagnosis-type</h5><div class="desc">Indicates if the inpatient institutional diagnosis is a</div></a><a class="db-item" href="/igpop-vc/valuesets/c4bb-claim-outpatient-institutional-diagnosis-type.html"><h5>c4bb-claim-outpatient-institutional-diagnosis-type</h5><div class="desc">Indicates if the outpatient institutional diagnosis is </div></a><a class="db-item" href="/igpop-vc/valuesets/c4bb-claim-professional-and-non-clinician-diagnosis-type.html"><h5>c4bb-claim-professional-and-non-clinician-diagnosis-type</h5><div class="desc">Indicates if the professional and non-clinician diagnos</div></a><a class="db-item" href="/igpop-vc/valuesets/c4bb-supportinginfo-type.html"><h5>c4bb-supportinginfo-type</h5><div class="desc">Used as the discriminator for the types of supporting i</div></a><a class="db-item" href="/igpop-vc/valuesets/c4bb-total-category-discriminator.html"><h5>c4bb-total-category-discriminator</h5><div class="desc">Used as the discriminator for total.category for the CA</div></a><a class="db-item" href="/igpop-vc/valuesets/care-plan-activity-status.html"><h5>care-plan-activity-status</h5><div class="desc">Codes that reflect the current state of a care plan act</div></a><a class="db-item" href="/igpop-vc/valuesets/care-plan-category.html"><h5>care-plan-category</h5><div class="desc">Example codes indicating the category a care plan falls</div></a><a class="db-item" href="/igpop-vc/valuesets/care-plan-intent.html"><h5>care-plan-intent</h5><div class="desc">Codes indicating the degree of authority/intentionality</div></a><a class="db-item" href="/igpop-vc/valuesets/care-team-participant-role.html"><h5>care-team-participant-role</h5><div class="desc">Indicates specific responsibility of an individual with</div></a><a class="db-item" href="/igpop-vc/valuesets/care-team-status.html"><h5>care-team-status</h5><div class="desc">Indicates the status of the care team.</div></a><a class="db-item" href="/igpop-vc/valuesets/claim-institutional-care-team-role.html"><h5>claim-institutional-care-team-role</h5><div class="desc">Describes functional roles of the care team members.</div></a><a class="db-item" href="/igpop-vc/valuesets/claim-pharmacy-careteam-role.html"><h5>claim-pharmacy-careteam-role</h5><div class="desc">Describes functional roles of the care team members</div></a><a class="db-item" href="/igpop-vc/valuesets/claim-professional-and-non-clinician-care-team-role.html"><h5>claim-professional-and-non-clinician-care-team-role</h5><div class="desc">Describes functional roles of the care team members</div></a><a class="db-item" href="/igpop-vc/valuesets/claim-type.html"><h5>claim-type</h5><div class="desc">This value set includes Claim Type codes.</div></a><a class="db-item" href="/igpop-vc/valuesets/claim-use.html"><h5>claim-use</h5><div class="desc">The purpose of the Claim - predetermination, preauthori</div></a><a class="db-item" href="/igpop-vc/valuesets/contact-point-system.html"><h5>contact-point-system</h5><div class="desc">Telecommunications form for contact point.</div></a><a class="db-item" href="/igpop-vc/valuesets/coverage-class.html"><h5>coverage-class</h5><div class="desc">This value set includes Coverage Class codes.</div></a><a class="db-item" href="/igpop-vc/valuesets/coverage-type.html"><h5>coverage-type</h5><div class="desc">This value set includes Coverage Type codes.</div></a><a class="db-item" href="/igpop-vc/valuesets/days-of-week.html"><h5>days-of-week</h5><div class="desc">The days of the week.</div></a><a class="db-item" href="/igpop-vc/valuesets/delivery-method.html"><h5>delivery-method</h5><div class="desc">Codes for documenting delivery methods.</div></a><a class="db-item" href="/igpop-vc/valuesets/diagnosis-codes.html"><h5>diagnosis-codes</h5><div class="desc">The Value Set is a combination of values from volume 1 </div></a><a class="db-item" href="/igpop-vc/valuesets/diagnostic-report-status.html"><h5>diagnostic-report-status</h5><div class="desc">The status of the diagnostic report.</div></a><a class="db-item" href="/igpop-vc/valuesets/encounter-status.html"><h5>encounter-status</h5><div class="desc">Current state of the encounter.</div></a><a class="db-item" href="/igpop-vc/valuesets/event-status.html"><h5>event-status</h5><div class="desc">Codes identifying the lifecycle stage of an event.</div></a><a class="db-item" href="/igpop-vc/valuesets/ex-benefitcategory-toscode.html"><h5>ex-benefitcategory-toscode</h5><div class="desc">This value set includes examples of Benefit Category co</div></a><a class="db-item" href="/igpop-vc/valuesets/explanationofbenefit-status.html"><h5>explanationofbenefit-status</h5><div class="desc">A code specifying the state of the resource instance.</div></a><a class="db-item" href="/igpop-vc/valuesets/fm-status.html"><h5>fm-status</h5><div class="desc">This value set includes Status codes.</div></a><a class="db-item" href="/igpop-vc/valuesets/goal-status.html"><h5>goal-status</h5><div class="desc">Codes that reflect the current state of a goal and whet</div></a><a class="db-item" href="/igpop-vc/valuesets/healthcare-service-category.html"><h5>healthcare-service-category</h5><div class="desc">Broad categories of healthcare services being performed</div></a><a class="db-item" href="/igpop-vc/valuesets/healthcare-service-characteristic.html"><h5>healthcare-service-characteristic</h5><div class="desc">Collection of characteristics (attributes)</div></a><a class="db-item" href="/igpop-vc/valuesets/healthcare-service-program.html"><h5>healthcare-service-program</h5><div class="desc">This value set defines an example set of codes that cou</div></a><a class="db-item" href="/igpop-vc/valuesets/identifier-type.html"><h5>identifier-type</h5><div class="desc">A coded type for an identifier that can be used to dete</div></a><a class="db-item" href="/igpop-vc/valuesets/individual-specialty-and-degree-license-certificate.html"><h5>individual-specialty-and-degree-license-certificate</h5><div class="desc">Individual Specialties, Degrees, Licenses, and Certific</div></a><a class="db-item" href="/igpop-vc/valuesets/insurance-product-type.html"><h5>insurance-product-type</h5><div class="desc">A distinct package of health insurance coverage benefit</div></a><a class="db-item" href="/igpop-vc/valuesets/languages.html"><h5>languages</h5><div class="desc"></div></a><a class="db-item" href="/igpop-vc/valuesets/list-mode.html"><h5>list-mode</h5><div class="desc">The processing mode that applies to this list.</div></a><a class="db-item" href="/igpop-vc/valuesets/list-status.html"><h5>list-status</h5><div class="desc">The current state of the list.</div></a><a class="db-item" href="/igpop-vc/valuesets/location-status.html"><h5>location-status</h5><div class="desc">Indicates whether the location is still in use.</div></a><a class="db-item" href="/igpop-vc/valuesets/medication-status.html"><h5>medication-status</h5><div class="desc">Medication Status Codes</div></a><a class="db-item" href="/igpop-vc/valuesets/medicationrequest-intent.html"><h5>medicationrequest-intent</h5><div class="desc">MedicationRequest Intent Codes</div></a><a class="db-item" href="/igpop-vc/valuesets/medicationrequest-status.html"><h5>medicationrequest-status</h5><div class="desc">MedicationRequest Status Codes</div></a><a class="db-item" href="/igpop-vc/valuesets/narrative-status.html"><h5>narrative-status</h5><div class="desc"></div></a><a class="db-item" href="/igpop-vc/valuesets/ndc-or-compound.html"><h5>ndc-or-compound</h5><div class="desc">Values will be the NDC Codes when the Compound Code val</div></a><a class="db-item" href="/igpop-vc/valuesets/nubc-revenue-codes.html"><h5>nubc-revenue-codes</h5><div class="desc">The UB-04 Data File contains the complete set of NUBC c</div></a><a class="db-item" href="/igpop-vc/valuesets/observation-category.html"><h5>observation-category</h5><div class="desc">Observation Category codes.</div></a><a class="db-item" href="/igpop-vc/valuesets/observation-status.html"><h5>observation-status</h5><div class="desc">Codes providing the status of an observation.</div></a><a class="db-item" href="/igpop-vc/valuesets/procedure-codes.html"><h5>procedure-codes</h5><div class="desc">The Value Set is a combination of three Code Systems - </div></a><a class="db-item" href="/igpop-vc/valuesets/provider-type.html"><h5>provider-type</h5><div class="desc">Categories of providers based on criteria in provider d</div></a><a class="db-item" href="/igpop-vc/valuesets/publication-status.html"><h5>publication-status</h5><div class="desc">The lifecycle status of an artifact.</div></a><a class="db-item" href="/igpop-vc/valuesets/remittance-outcome.html"><h5>remittance-outcome</h5><div class="desc">This value set includes Claim Processing Outcome codes.</div></a><a class="db-item" href="/igpop-vc/valuesets/request-status.html"><h5>request-status</h5><div class="desc">Codes identifying the lifecycle stage of a request.</div></a><a class="db-item" href="/igpop-vc/valuesets/service-type.html"><h5>service-type</h5><div class="desc">Type of service that may be delivered or performed.</div></a><a class="db-item" href="/igpop-vc/valuesets/subscriber-relationship.html"><h5>subscriber-relationship</h5><div class="desc">This value set includes codes for the relationship betw</div></a><a class="db-item" href="/igpop-vc/valuesets/us-core-condition-category.html"><h5>us-core-condition-category</h5><div class="desc">The US Core Condition Category Codes support the separa</div></a><a class="db-item" href="/igpop-vc/valuesets/us-core-medication-codes.html"><h5>us-core-medication-codes</h5><div class="desc">All prescribable medication formulations represented us</div></a><a class="db-item" href="/igpop-vc/valuesets/us-core-procedure-code.html"><h5>us-core-procedure-code</h5><div class="desc">Concepts from CPT, SNOMED CT, HCPCS Level II Alphanumer</div></a><a class="db-item" href="/igpop-vc/valuesets/us-core-vital-signs.html"><h5>us-core-vital-signs</h5><div class="desc">The vital sign codes from the base FHIR and US Core Vit</div></a></div></div><script src="/igpop-vc/static/jquery-3.4.1.min.js"></script><script src="/igpop-vc/static/collapse-structure.js"></script><script src="/igpop-vc/static/lmenu-view.js"></script><script src="/igpop-vc/static/tabs.js"></script></body></html>

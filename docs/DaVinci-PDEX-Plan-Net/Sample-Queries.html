@@ -1,0 +1,258 @@
+<html><head><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-158366190-1"></script><script>window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+                              gtag('js', new Date());
+
+                              gtag('config', 'UA-158366190-1');
+                              gtag('config', 'UA-158366190-2');</script><meta charset="utf-8" /><link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" rel="stylesheet" /><link href="/igpop-vc/static/fire-solid.png" rel="icon" /><link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet" /><link href="//fonts.googleapis.com/css?family=Montserrat|Roboto&amp;display=swap" rel="stylesheet" /><style>body .table {
+  display: table;
+  border-collapse: collapse;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+body .row {
+  display: table-row;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+body .column {
+  display: table-cell;
+  padding: 8px;
+}
+
+body .first-line {
+  border-bottom: 2px solid #E6ECF1;
+  color: #5b6975;
+}
+
+body a {
+  color: rgb(217, 86, 64);
+}
+
+body .body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: 0;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas: "header header header" 
+"nav content ads";
+  padding: 0;
+  flex-direction: column;
+  grid-gap: 0px;
+  display: grid;
+  grid-template-columns: minmax(0, 20%) minmax(0, 1fr) minmax(0, 15%);
+}
+
+body .body #welcome {
+  color: inherit;
+}
+
+body .body #header {
+  grid-area: header;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow:  0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  z-index: 100;
+  border-bottom: 1px solid #d4dadf;
+  padding: 10px 0;
+}
+
+body .body #header h5 {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  padding: 5px 0px;
+  border-right: 1px solid #ddd;
+}
+
+body .body #header h5 .fa {
+  color: #e94a35;
+  text-shadow: -1px -1px 1px #000000c7;
+}
+
+body .body #header #top-nav {
+  text-align: center;
+  padding-left: 80px;
+  display: inline-block;
+}
+
+body .body #header #top-nav a {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #d95640;
+  padding: 5px;
+}
+
+body .body #main-menu {
+  grid-area: nav;
+  padding-top: 32px;
+  padding-left: 68px;
+  border-right: 1px solid #E6ECF1;
+  background-color: #f5f7f9;
+  overflow-y: auto;
+  padding-bottom: 100px;
+  font-weight: 800;
+}
+
+body .body #main-menu a {
+  line-height: 1.5;
+  border: 1px solid transparent;
+  word-break: break-word;
+  padding: 7px 24px 7px 16px;
+  cursor: pointer;
+  font-weight: 1000;
+  text-decoration: none;
+  font-size: 14px;
+  box-sizing: content-box;
+  display: block;
+  background: none;
+  color: #5C6975;
+}
+
+body .body #main-menu a:hover {
+  background-color: #E6ECF1;
+}
+
+body .body #main-menu a.active {
+  background-color: white;
+  border-left: 1px solid #E6ECF1;
+  border-top: 1px solid #E6ECF1;
+  border-bottom: 1px solid #E6ECF1;
+  border-right: 1px solid white;
+  margin-right: -1px;
+  z-index: 10;
+  color: #d95640;
+}
+
+body .body #main-menu section {
+  border-left: 1px solid #ddd;
+  margin-left: 18px;
+}
+
+body .body #main-menu section a {
+  color: gray;
+  font-weight: 400;
+}
+
+body .body #content {
+  background-color: white;
+  padding: 40px 88px;
+  grid-area: content;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+body .body #content h1 {
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .body #content h2, body .body #content h3 {
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .body #content hr {
+  border-top: 2px solid #E6ECF1;
+}
+
+body .body #content a.refbtn {
+  margin: 0 5px;
+  color: #888888;
+  cursor: pointer;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.42857143;
+}
+
+body .body #content span.sub {
+  float: right;
+  font-size: 16px;
+  color: #888;
+  display: inline-block;
+}
+
+body .body #db-content {
+  background-color: white;
+  padding: 40px 0px;
+  margin: 0 -40px;
+  grid-area: content;
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.625;
+}
+
+body .body #db-content .db-item {
+  width: 350px;
+  margin-right: 1em;
+  border: 1px solid #E6ECF1;
+  vertical-align: top;
+  padding: 16px 24px;
+  min-height: 108px;
+  margin-bottom: 1em;
+  box-shadow: 0 3px 8px 0 rgba(116, 129, 141, 0.1);
+  background-color: white;
+  border-radius: 3px;
+  display: inline-block;
+  color: #242A31;
+}
+
+body .body #db-content .db-item:hover {
+  text-decoration: none;
+  border-color: rgb(56, 132, 254);
+  opacity: 1;
+  color: #3884FE;
+}
+
+body .body #db-content .db-item h5 {
+  font-size: 16px;
+  font-weight: 800;
+}
+
+body .body #db-content .db-item .desc {
+  color: #9DAAB6;
+  font-size: 14px;
+}
+
+body .summary {
+  color: #74818D;
+}</style><title>VillageCare FHIR API</title></head><body><div class="body"><div id="header"><a href="/igpop-vc/" id="welcome"><h5><span class="fa fa-fire"></span> VillageCare FHIR API</h5></a><div id="top-nav"><a href="/igpop-vc/docs/CARIN-BB/Description.html">Docs</a><a href="/igpop-vc/profiles/CarePlan/US-Core.html">Profiles</a><a href="/igpop-vc/valuesets/act-encounter-code.html">ValueSets</a></div></div><style>.content, thead {
+  color: #5b6975;
+  border-bottom: 2px solid #E6ECF1;
+}
+
+.content, thead, tr, th {
+  padding: 8px;
+}
+
+.content, tbody, tr {
+  border-bottom: 2px solid #E6ECF1;
+}
+
+.content, tbody, td {
+  padding: 8px;
+}
+
+.content, table {
+  margin: 20px 0px;
+}</style><div id="main-menu"><div><a class="item " href="javascript:void(0)">CARIN-BB</a><section><a class="nested " href="/igpop-vc/docs/CARIN-BB/Description.html">Description</a></section></div><div><a class="item " href="javascript:void(0)">DaVinci-PDEX-Plan-Net</a><section><a class="nested " href="/igpop-vc/docs/DaVinci-PDEX-Plan-Net/Description.html">Description</a><a class="nested active" href="/igpop-vc/docs/DaVinci-PDEX-Plan-Net/Sample-Queries.html">Sample Queries</a></section></div><div><a class="item " href="javascript:void(0)">DaVinci-PDEX-US-Drug-Formulary</a><section><a class="nested " href="/igpop-vc/docs/DaVinci-PDEX-US-Drug-Formulary/Description.html">Description</a></section></div><div><a class="item " href="javascript:void(0)">US-Core</a><section><a class="nested " href="/igpop-vc/docs/US-Core/Description.html">Description</a></section></div></div><div id="content"><pre></pre><h1>DaVinci PDEX Plan Net API Query Examples</h1><p>This page contains short descriptions of Practitioner, PractitionerRole, Organization, and OrganizationAffiliation search queries, lists of search parameters, and sample queries.</p><h2>Practitioner</h2><p>We store information about practitioners in these FHIR Entities:</p><ul><li>Practitioner - basic info about а practitioner. Contains demographics, specialty, language and identifiers like NPI and IRS</li><li>PractitionerRole - central entity to connect practitioner's entities. Also contains info about available time</li><li>Organization - practitioner's place of work</li><li>Network - info about health plans a practitioner is connected with</li><li>Location - practitioner's location info (address) and telecom info (phone, email)</li><li>HealthcareService - services provided by a practitioner</li></ul><p>Practitioner queries examples:</p><ul><li>Get 100 practitioners (by default)<br/>  <a href='https://fhir.villagecare.org/Practitioner'>https://fhir.villagecare.org/Practitioner</a></li><li>Get practitioner by name<br/>  <a href='https://fhir.villagecare.org/Practitioner?name=GLASSER%20ANN'>https://fhir.villagecare.org/Practitioner?name=GLASSER%20ANN</a></li><li>Get practitioners by language<br/>  <a href='https://fhir.villagecare.org/Practitioner?communication=es'>https://fhir.villagecare.org/Practitioner?communication=es</a></li><li>Get practitioners by specialty<br/>  <a href='https://fhir.villagecare.org/Practitioner?qualificationName=PHYSICAL%20THERAPY'>https://fhir.villagecare.org/Practitioner?qualificationName=PHYSICAL%20THERAPY</a></li><li>Get practitioner by identifier<br/>  <a href='https://fhir.villagecare.org/Practitioner?identifier=1861919391'>https://fhir.villagecare.org/Practitioner?identifier=1861919391</a></li><li>Get practitioners by language AND specialty<br/>  <a href='https://fhir.villagecare.org/Practitioner?communication=es&qualificationName=PHYSICAL%20THERAPY'>https://fhir.villagecare.org/Practitioner?communication=es&qualificationName=PHYSICAL%20THERAPY</a></li></ul><h2>PractitionerRole</h2><p>PractitionerRole is a central entity for a practitioner. It means that this entity contains info about practitioner, network, location, organization and healthcareService. You can use PractitionerRole to search practitioners in the selected network:</p><ol><li>Get practitionerRoles by network<br/>   <a href='https://fhir.villagecare.org/PractitionerRole?practitionerNetwork=MAP'>https://fhir.villagecare.org/PractitionerRole?practitionerNetwork=MAP</a>	</li><li>Get Practitioner Fhir ID from the PractitionerRole entity<pre><code class="json">&quot;practitioner&quot;: {
+  &quot;id&quot;: &quot;920c870c-2553-4ff0-b255-b2c58504dbce&quot;,
+  &quot;resource&quot;: {
+    ...
+  },
+  &quot;resourceType&quot;: &quot;Practitioner&quot;
+}
+</code></pre></li><li>Get practitioner by Fhir ID<br/><a href='https://fhir.villagecare.org/Practitioner?id=b061b7b9-79d6-4cf2-a758-41debb380760'>https://fhir.villagecare.org/Practitioner?id=b061b7b9-79d6-4cf2-a758-41debb380760</a></li></ol><h4>Advanced PractitionerRole Queries</h4><p>Also PractitionerRole entity is used to get all FHIR entities connected with a practitioner in one query. These queries can use multiple search parameters and you can include, exclude and combine them. Also you can control what entities will be returned by including and excluding entities from the _include parameter of these queries.</p><p>To add additional entities in the response, like Practitioner or Location you should use _include parameter, e.g.:</p><ul><li>Get PractitionerRole and Practitioner entities<br/><a href='https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:practitioner'>https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:practitioner</a>	</li><li>Get PractitionerRole with Practitioner and Location entities<br/><a href='https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:location'>https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:practitioner,PractitionerRole:location</a>			</li><li>Get PractitionerRole with all entities<br/><a href='https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService'>https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService</a>	</li></ul>	<p>Also you can use these search parameters:	</p><ul><li>practitionerName - practitioner name</li><li>organizationName - organization name</li><li>practitionerNetwork - practitioner network code</li><li>practitionerSpecialty - full practitioner specialty name</li><li>practitionerType - full practitioner type name</li><li>practitionerSpecialtyCode - practitioner specialty code</li><li>practitionerTypeCode - practitioner type code</li></ul><p>Advanced PractitionerRole queries examples:</p><ul><li>Get by practitioner name<br/><a href='https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO'>https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO</a></li><li>Get by network code and practitioner specialty<br/><a href='https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY'>https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY</a></li><li>Get by all search parameters<br/><a href='https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO&organizationName=THE%20MOUNT%20SINAI%20HOSPITAL&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY&practitionerType=SPECIALISTS&practitionerSpecialtyCode=21001&practitionerTypeCode=SP'>https://fhir.villagecare.org/PractitionerRole?_include=PractitionerRole:organization,PractitionerRole:practitioner,PractitionerRole:network,PractitionerRole:location,PractitionerRole:healthcareService&practitionerName=SEQUEIRA%20RODRIGO&organizationName=THE%20MOUNT%20SINAI%20HOSPITAL&practitionerNetwork=DSNP&practitionerSpecialty=GENERAL%20SURGERY&practitionerType=SPECIALISTS&practitionerSpecialtyCode=21001&practitionerTypeCode=SP</a><hr/></li></ul><h2>Organization</h2><p>We store information about organization in these FHIR Entities:</p><p>Organization - basic info about an organization. Contains name, address, type, specialty, identifiers like NPI and telecom info like phone and email. OrganizationAffiliation - central entity to connect organization's entities. Network - health plans an organization is connected with Location - organization's location (address) and telecom (phone, email) info  HealthcareService - services provided in an organization</p><p>Organization queries examples:</p><ul><li>Get 100 organizations (by default)<br/>  <a href='https://fhir.villagecare.org/Organization'>https://fhir.villagecare.org/Organization</a></li><li>Get organization by name<br/>  <a href='https://fhir.villagecare.org/Organization?name=NORTH%20CENTRAL%20BRONX%20HOSPITAL'>https://fhir.villagecare.org/Organization?name=NORTH%20CENTRAL%20BRONX%20HOSPITAL</a></li><li>Get organizations by address<br/>  <a href='https://fhir.villagecare.org/Organization?address=BRONX'>https://fhir.villagecare.org/Organization?address=BRONX</a></li><li>Get organizations by type<br/>  <a href='https://fhir.villagecare.org/Organization?type=HS'>https://fhir.villagecare.org/Organization?type=HS</a>	</li><li>Get organization by identifier<br/>  <a href='https://fhir.villagecare.org/Organization?identifier=1023024882'>https://fhir.villagecare.org/Organization?identifier=1023024882</a></li><li>Get organizations by address AND type<br/>  <a href='https://fhir.villagecare.org/Organization?address=BRONX&type=HS'>https://fhir.villagecare.org/Organization?address=BRONX&type=HS</a></li></ul><h2>OrganizationAffiliation</h2><p>OrganizationAffiliation is a central entity for an organization. It means that this entity contains info about organization, network, location, and healthcareService. You can use OrganizationAffiliation to search organization in the selected network:</p><ol><li>Get OrganizationAffiliation by network<br/>  <a href='https://fhir.villagecare.org/OrganizationAffiliation?organizationNetwork=MLTC'>https://fhir.villagecare.org/OrganizationAffiliation?organizationNetwork=MLTC</a>	</li><li>Get Organization Fhir ID from the OrganizationAffiliation entity<pre><code class="json">&quot;organization&quot;: {
+     &quot;id&quot;: &quot;22d99f7c-4dc6-46da-b5f8-1371f6ae8a53&quot;,
+     &quot;resource&quot;: {
+		...
+     },
+     &quot;resourceType&quot;: &quot;Organization&quot;
+}
+</code></pre></li><li>Get Organization by Fhir ID<br/>  <a href='https://fhir.villagecare.org/Organization?id=22d99f7c-4dc6-46da-b5f8-1371f6ae8a53'>https://fhir.villagecare.org/Organization?id=22d99f7c-4dc6-46da-b5f8-1371f6ae8a53</a></li></ol><h4>Advanced OrganizationAffiliation Queries</h4><p>Also OrganizationAffiliation entity is used to get all FHIR entities connected with an organization in one query. These queries can use multiple search parameters and you can include, exclude and combine them. Also you can control what entities will be returned by including and excluding entities from the _include parameter of these queries.</p><p>To add additional entities in the response, like Organization or HealthcareService you should use _include parameter, e.g.:</p><ul><li>Get OrganizationAffiliation and Organization entities<br/>  <a href='https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization'>https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization</a>		</li><li>Get OrganizationAffiliation with Organization and HealthcareService entities<br/>  <a href='https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:service'>https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:service</a></li><li>Get OrganizationAffiliation with all entities<br/>        <a href='https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service'>https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service</a></li></ul><p>Also you can use these search parameters:	 	</p><ul><li>organizationName - organization name</li><li>organizationNetwork - organization network code</li><li>organizationType - full organization type name</li><li>organizationSpecialty - full organization specialty name</li><li>organizationSpecialtyCode - organization specialty code</li><li>organizationTypeCode - organization type code</li></ul><p>Advanced OrganizationAffiliation queries examples:</p><ul><li>Get by organization name<br/> <a href='https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC'>https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC</a></li><li>Get by network code and organization specialty<br/><a href='https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationNetwork=MLTC&organizationSpecialty=HOME%20HEALTH%20AIDE'>https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationNetwork=MLTC&organizationSpecialty=HOME%20HEALTH%20AIDE</a></li><li>Get by all search parameters<br/>  <a href='https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC&organizationNetwork=MLTC&organizationType=ANCILLARY&organizationSpecialty=HOME%20HEALTH%20AIDE&organizationTypeCode=AN&organizationSpecialtyCode=66801'>https://fhir.villagecare.org/OrganizationAffiliation?_include=OrganizationAffiliation:organization,OrganizationAffiliation:network,OrganizationAffiliation:location,OrganizationAffiliation:service&organizationName=ALWAYS%20HOME%20CARE%20INC&organizationNetwork=MLTC&organizationType=ANCILLARY&organizationSpecialty=HOME%20HEALTH%20AIDE&organizationTypeCode=AN&organizationSpecialtyCode=66801</a></li></ul></div></div><script src="/igpop-vc/static/jquery-3.4.1.min.js"></script><script src="/igpop-vc/static/collapse-structure.js"></script><script src="/igpop-vc/static/lmenu-view.js"></script><script src="/igpop-vc/static/tabs.js"></script></body></html>
